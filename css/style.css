@@ -17,6 +17,9 @@
   --color-orange: #fd6413;
 
   --color-gray: #1b1e26;
+
+  /* Size */
+  --size-max-width: 1200px;
 }
 
 * {
@@ -60,6 +63,12 @@ button:focus {
 .section {
   padding: 4rem;
   text-align: center;
+}
+
+.max-container {
+  max-width: var(--size-max-width);
+  /* 사이즈 맥스 위드를 설정해주면 어바웃이 왼쪽 정렬이 되는데 이때 마진 오토만 해주면 중앙정렬이 된다. */
+  margin: auto;
 }
 
 .title {
@@ -164,4 +173,58 @@ button:focus {
   outline: 2px solid var(--color-accent);
   /* border: 2px solid var(--color-accent); */
   /* 컨텐츠 밀림 현장을 없애기 위해 outline 사용 */
+}
+
+/* About */
+.majors {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.major {
+  background-color: var(--color-primary-variant);
+  padding: 2rem 1rem;
+  color: var(--color-text);
+  border-radius: 1rem;
+  cursor: default;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+}
+
+.major_icon {
+  font-size: 4rem;
+  margin: 1rem 0;
+  color: var(--color-accent);
+  transition: all 300ms ease;
+}
+
+.major_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.major:hover .major_icon {
+  transform: rotate(-15deg) scale(1.2);
+}
+
+.jobs {
+  text-align: start;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.job_name {
+  color: var(--color-primary);
+}
+
+.job_period {
+  color: var(--color-primary);
+  font-size: 0.8rem;
 }
