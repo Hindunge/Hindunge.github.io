@@ -131,7 +131,9 @@ button:focus {
 }
 
 .header_menu_item {
+  display: block;
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header_menu_item:hover {
@@ -455,8 +457,8 @@ button:focus {
   bottom: 3rem;
   right: 3rem;
   font-size: 3rem;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
@@ -487,7 +489,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .title {
@@ -512,7 +514,8 @@ button:focus {
     display: none;
     flex-direction: column;
     text-align: center;
-    padding: 1rem 4rem;
+    /* padding: 1rem 4rem; */
+    margin: 1rem 4rem;
     gap: 1rem;
   }
 
