@@ -30,3 +30,10 @@ document.addEventListener('scroll', () => {
     arrowUp.style.opacity = 0;
   }
 });
+
+//NavBar 토글버튼 클릭 처리
+const navbarMenu = document.querySelector('.header_menu');
+const navbarToggle = document.querySelector('.header_toggle');
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});

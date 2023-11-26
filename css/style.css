@@ -57,7 +57,7 @@ button {
 }
 
 button:focus {
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 /* common */
 .section {
@@ -114,6 +114,15 @@ button:focus {
 
 .header_logo_title {
   font-size: 1.8rem;
+}
+/* 9.11 강의 모바일 메뉴 구현 */
+.header_toggle {
+  display: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
 }
 
 .header_menu {
@@ -492,13 +501,23 @@ button:focus {
   .header {
     flex-direction: column;
     align-items: start;
+    background-color: var(--color-primary);
+  }
+
+  .header_toggle {
+    display: block;
   }
 
   .header_menu {
+    display: none;
     flex-direction: column;
     text-align: center;
     padding: 1rem 4rem;
     gap: 1rem;
+  }
+
+  .header_menu.open {
+    display: flex;
   }
 
   .header_nav {
