@@ -7,6 +7,12 @@ categories.addEventListener('click', (event) => {
   if (filter == null) {
     return;
   }
+  // Active 메뉴를 재설정
+  const active = document.querySelector('.category--selected');
+  active.classList.remove('category--selected');
+  event.target.classList.add('category--selected');
+
+  //프로젝트 필터링
   projects.forEach((project) => {
     if (filter === 'all' || filter === project.dataset.type) {
       project.style.display = 'block';
