@@ -1,6 +1,6 @@
 /* Global */
 :root {
-  /* App Colors 한단계 더 추상화 시켜주는 변수 */
+  /* App Colors */
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
   --color-accent: var(--color-blue);
@@ -24,6 +24,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
