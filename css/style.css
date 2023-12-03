@@ -152,11 +152,33 @@ button:focus {
 /* HOME */
 
 #home {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
   text-align: center;
+}
+
+.home_divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.home_divider svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 100px;
+}
+
+.home_divider .shape-fill {
+  fill: #ffffff;
 }
 
 .home_avatar {
@@ -254,9 +276,31 @@ button:focus {
 
 /* Skills */
 #skills {
+  position: relative;
   background-color: var(--color-primary-variant);
   color: var(--color-text);
   cursor: default;
+}
+
+.skill_divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.skill_divider svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 83px;
+}
+
+.skill_divider .shape-fill {
+  fill: var(--color-primary);
 }
 
 .skills {
@@ -477,8 +521,29 @@ button:focus {
 
 /* Footer */
 #contact {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
+}
+
+.contact_divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.contact_divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.contact_divider .shape-fill {
+  fill: #ffffff;
 }
 
 .contact_links {
